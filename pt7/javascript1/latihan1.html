@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h3>Selamat datang di kalkulator Sederhana</h3>
+    <button>Lakukan operasi</button>
+    <script>
+        var tombol = document.querySelector('button')
+        tombol.onclick = function(){
+            const operator = prompt("Masukkan operator tambah '+', kurang '-', kali '*', atau bagi '/': ");
+            const angka1 = parseFloat(prompt ('Masukkan angka pertama: '));
+            const angka2 = parseFloat(prompt ('Masukkan angka kedua: '));
+        
+            let result;
+        
+        
+            if (operator == '+'){
+                result = angka1 + angka2;
+            }
+            else if (operator == '-'){
+                result = angka1 - angka2;
+            }
+            else if (operator == '*'){
+                result = angka1 * angka2;
+            }
+            else {
+                result = angka1 / angka2;
+            }
+        
+            window.alert("Hasilnya adalah " + result);
+        }
+    </script>
+</body>
+</html>

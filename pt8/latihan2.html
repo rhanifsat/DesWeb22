@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="bahan/jquery-ui.min.css">
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bahan/jquery-ui.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1 id="jam">Placeholder Jam</h1>
+        <br>
+        <button id="start">START/STOP</button>
+    </center>
+
+    <script>
+
+        var interval = setInterval(function() {
+            var momentNow = moment();
+            $('#date-part').html(momentNow.format('YYYY MMMM DD') + ' '
+                            + momentNow.format('dddd')
+                             .substring(0,3).toUpperCase());
+            $('#time-part').html(momentNow.format('A hh:mm:ss'));
+        }, 100);
+        
+    </script>
+</body>
+</html>

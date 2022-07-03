@@ -1,0 +1,123 @@
+<script language="javascript" type="text/javascript">
+    function dynamicdropdown(listindex)
+    {
+        switch (listindex)
+        {
+        case "1" :
+            document.getElementById("prodi").options[0]=new Option("Pilih Prodi","");
+            document.getElementById("prodi").options[1]=new Option("Ilmu Hukum","1.1");
+            break;
+        case "2" :
+            document.getElementById("prodi").options[0]=new Option("Pilih Prodi","");
+            document.getElementById("prodi").options[1]=new Option("Perencanaan Wilayah dan Kota","2.1");
+            document.getElementById("prodi").options[2]=new Option("Teknik Elektro","2.2");
+            document.getElementById("prodi").options[3]=new Option("Teknik Industri","2.3");
+            document.getElementById("prodi").options[4]=new Option("Teknik Kimia","2.4");
+            document.getElementById("prodi").options[5]=new Option("Arsitektur","2.5");
+            document.getElementById("prodi").options[6]=new Option("Teknik Sipil","2.6");
+            break;
+        case "3" :
+            document.getElementById("prodi").options[0]=new Option("Pilih Prodi","");
+            document.getElementById("prodi").options[1]=new Option("Sastra Inggris","3.1");
+            document.getElementById("prodi").options[2]=new Option("Sastra & Bahasa Daerah","3.2");
+            document.getElementById("prodi").options[3]=new Option("Sastra Arab","3.3");
+            document.getElementById("prodi").options[4]=new Option("Sastra Indonesia","3.4");
+            document.getElementById("prodi").options[5]=new Option("Sejarah","3.5");
+            break;
+        case "4" :
+            document.getElementById("prodi").options[0]=new Option("Pilih Prodi","");
+            document.getElementById("prodi").options[1]=new Option("Kedokteran","4.1");
+            document.getElementById("prodi").options[2]=new Option("Psikologi","4.2");
+            break;
+        case "6" :
+            document.getElementById("prodi").options[0]=new Option("Pilih Prodi","");
+            document.getElementById("prodi").options[1]=new Option("Bimbingan dan Konseling","6.1");
+            document.getElementById("prodi").options[2]=new Option("Pendidikan Administrasi Perkantoran","6.2");
+            document.getElementById("prodi").options[3]=new Option("Pendidikan Akuntansi","6.3");
+            document.getElementById("prodi").options[4]=new Option("Pendidikan Bahasa dan Sastra Indonesia","6.4");
+            document.getElementById("prodi").options[5]=new Option("Pendidikan Bahasa Inggris","6.5");
+            document.getElementById("prodi").options[6]=new Option("Pendidikan Bahasa Jawa","6.6");
+            document.getElementById("prodi").options[7]=new Option("Pendidikan Biologi","6.7");
+            document.getElementById("prodi").options[8]=new Option("Pendidikan Ekonomi","6.8");
+            document.getElementById("prodi").options[9]=new Option("Pendidikan Fisika","6.9");
+            document.getElementById("prodi").options[10]=new Option("Pendidikan Geografi","6.10");
+            document.getElementById("prodi").options[11]=new Option("Pendidikan Guru Pendidikan Anak Usia Dini","6.11");
+            document.getElementById("prodi").options[12]=new Option("Pendidikan Guru Sekolah Dasar","6.12");
+            document.getElementById("prodi").options[13]=new Option("Pendidikan Ilmu Pengetahuan Alam","6.13");
+            document.getElementById("prodi").options[14]=new Option("Pendidikan Kimia","6.14");
+            document.getElementById("prodi").options[15]=new Option("Pendidikan Luar Biasa","6.15");
+            document.getElementById("prodi").options[16]=new Option("Pendidikan Matematika","6.16");
+            document.getElementById("prodi").options[17]=new Option("Pendidikan Pancasila dan Kewarganegaraan","6.17");
+            document.getElementById("prodi").options[18]=new Option("Pendidikan Sejarah","6.18");
+            document.getElementById("prodi").options[19]=new Option("Pendidikan Seni Rupa","6.19");
+            document.getElementById("prodi").options[20]=new Option("Pendidikan Sosiologi Antropologi","6.20");
+            document.getElementById("prodi").options[21]=new Option("Pendidikan Teknik Bangunan","6.21");
+            document.getElementById("prodi").options[22]=new Option("Pendidikan Teknik Informatika dan Komputer","6.22");
+            document.getElementById("prodi").options[23]=new Option("Pendidikan Teknik Mesin","6.23");
+        }
+        return true;
+    }
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pendaftaran Anggota Perpus UNS</title>
+</head>
+<body bgcolor="#bdfffb">
+	<center><h1>Formulir Pendaftaran Anggota Perpustakaan UNS</h1>
+	<hr>
+	<table border="1" width="50%">
+		<form>
+			<tr>
+				<td>Nama</td>
+				<td><label for="nama"></label><input type="text" name="nama"></td>
+				<td>Tempat Lahir</td>
+				<td><label for="tplahir"></label><input type="text" name="tplahir"></td>
+			</tr>
+			<tr>
+				<td>NIM</td>
+				<td><label for="nim"></label><input type="text" name="nim"></td>
+				<td>Tanggal Lahir</td>
+				<td><label for="tplahir"></label><input type="date" name="tplahir"></td>
+			</tr>
+			<tr>
+				<td>Fakultas</td>
+				<td>
+					<div class="category_div" id="category_div">
+					<select id="fakultas "name="fakultas" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+						<option value="0">Pilih Fakultas</option>
+						<option value="1">Hukum</option>
+						<option value="2">Teknik</option>
+						<option value="3">Ilmu Budaya</option>
+						<option value="4">Kedokteran</option>
+						<option value="5">Ekonomi dan Bisnis</option>
+						<option value="6">Keguruan dan Ilmu Pendidikan</option>
+						<option value="7">Seni Rupa dan Desain</option>
+						<option value="8">Pertanian</option>
+						<option value="9">Matematika dan Ilmu Pengetahuan Alam</option>
+						<option value="10">Ilmu Sosial dan Politik</option>
+						<option value="11">Keolahragaan</option>
+						<option value="12">Pascasarjana</option>
+						<option value="13">Vokasi</option>
+					</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Prodi</td>
+				<td><div class="sub_category_div" id="sub_category_div">
+					<script type="text/javascript" language="JavaScript">
+        			document.write('<select name="prodi" id="prodi"><option value="">Pilih Prodi</option></select>')
+        			</script>
+        			<noscript>
+					<select id="prodi" name="prodi">
+						<option value="1.1">Ilmu Hukum</option>
+					</select>
+					</div>
+				</td>
+			</tr>
+		</form>
+	</table>
+	</center>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoComplete Jq</title>
+
+    <link rel="stylesheet" href="bahan/jquery-ui.min.css">
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bahan/jquery-ui.min.js"></script>
+</head>
+<body>
+    <label for="tags">Pilih Tag</label>
+    <input type="text" name="tag" id="tags">
+
+    <script>
+        var tags = [
+        "Alfa","Bravo","Charlie","Delta","Echo","Foxtrot","Golf","Hotel","India","Juliett","Kilo","Lima","Mike","November","Oscar","Papa","Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"
+        ];
+
+        $(function(){
+            $('#tags').autocomplete({
+                source : tags
+            });
+        });
+    </script>
+    
+</body>
+</html>

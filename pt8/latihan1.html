@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bahan/jquery-ui.min.css">
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bahan/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+    <h1 id="judul">PTIK FKIP UNS</h1>
+
+    <p>The <mark class="tanda">Faculty of Teacher Training and Education</mark>, <mark class="tanda">Sebelas Maret University</mark>, Surakarta is an <mark class="tanda">Educational Personnel Education Institution (LPTK)</mark> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <mark class="tanda">superior, strong and intelligent educational staff</mark>.
+    </p>
+
+    <p>The <mark class="tanda">Informatics and Computer Technology Education (PTIK)</mark> study program is planned to take shelter in the management of the <mark class="tanda">Engineering and Vocational Education (PTK)</mark> department. This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <mark class="tanda">prioritized to teach in vocational/vocational programs</mark>. So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <mark class="tanda">Building Engineering Education</mark>, and <mark class="tanda">Mechanical Engineering Education</mark>. To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <mark class="tanda">resource sharing with the mathematics study program</mark>.
+    </p>
+
+    <button id="highlight">Highlight Paragraf</button>
+
+    <script>
+        
+        $(".tanda").css("background-color","white");
+
+        $("#highlight").click(function(){
+            var ubah = $(".tanda");
+            for (let i = 0; i <ubah.length; i++){
+                if(ubah[i].style.backgroundColor != "yellow"){
+                    ubah[i].style.backgroundColor = "yellow";
+                    ubah[i].style.color = "red";
+                    ubah[i].style.fontWeight = "bold"
+                }
+                else{
+                    ubah[i].style.backgroundColor = "white";
+                    ubah[i].style.color = "black";
+                    ubah[i].style.fontWeight = "normal"
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

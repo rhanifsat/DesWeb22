@@ -1,0 +1,119 @@
+
+#wrap{
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#header{
+	background-image: url(imager.header/jpg);
+	border-bottom-right-radius: 50px;
+	width: 730px;
+	height: 300px;
+	margin: auto;
+	box-shadow: 0 0 10 px rgba(0, 0, 0, .25);
+	float: right;
+}
+
+#judul{
+	font-size: 50px;
+	text-align: right;
+	padding: 200px 40px 0 0;
+}
+
+#judul a{
+	color: white;
+	text-decoration: none;
+}
+
+#judul a:hover{
+	color: grey;
+}
+
+.desc{
+	font-size: 30px;
+	color: white;
+	text-align: right;
+	padding: 0 40px 0 0;
+}
+
+#menu ul{
+	float: right;
+	background: darkblue;
+	padding: 0 0 px;
+	position: relative;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+	list-style: none;
+	width: 730px;
+}
+
+#menu ul :after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#menu ul li{
+	float: left;
+}
+
+#menu ul li:hover{
+	background: blue;
+}
+
+#menu ul li a{
+	display: block;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#menu ul li:hover a{
+	color: white;
+}
+
+#menu ul li:hover > ul{
+	display: block;
+}
+
+#menu ul ul {
+	background: darkblue;
+	position: absolute;
+	padding: 0;
+	top: 100%;
+	display: none;
+	width: auto;
+}
+
+#menu ul ul li{
+	float: none;
+	position: relative;
+}
+
+#menu ul ul li a{
+	padding: 10px 30px;
+	color: white;
+}
+
+#menu ul ul li a:hover{
+	background: blue;
+	color: white;
+}
+
+#menu ul ul ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#kiri{
+	border-top-left-radius: 50px;
+	background-color: white;
+	width: 250px;
+	height: auto;
+	margin: 0 0 20 px;
+	float: left;
+	list-style: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}

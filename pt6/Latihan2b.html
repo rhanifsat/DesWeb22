@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desain Responsif</title>
+	<style type="text/css">
+		#wrapper{
+			margin: auto;
+			width: 100%;
+		}
+
+		#header{
+			height: 150px;
+			padding: 20px;
+			border: 2px solid red;
+		}
+
+		#nav{
+			margin: auto;
+			padding: 20px;;
+			border: 2px solid red;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.box{
+			float: left;
+			width: 22%;
+			margin: 20px;
+			height: 120px;
+			background: red;
+			border: 2px solid red;
+			min-width: 200px;
+		}
+
+		#footer{
+			padding: 20px;
+			height: 120px;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+			<h2>Header</h2>
+		</div>
+
+		<div id="nav">
+			<h2>Services</h2>
+			<div class="box"> BOX 1 </div>
+			<div class="box"> BOX 2 </div>
+			<div class="box"> BOX 3 </div>
+			<div class="box"> BOX 4 </div>
+		</div>
+
+		<div id="footer">
+			<h2>Footer</h2>
+		</div>
+	</div>
+</body>
+</html>

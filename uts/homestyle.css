@@ -1,0 +1,43 @@
+body{
+	background-image: url(images/background.png);
+	background-size: 100%;
+}
+
+.text{
+	color: white;
+	font-family: sans-serif;
+	margin: 50px;
+	font-size: 50px;
+}
+
+.kiri{
+	float: left;
+	text-align: left;
+	margin: 75px 50px;
+}
+
+#menu{
+	float: right;
+	color: white;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+
+#menu ul{
+	float: right;
+	background: #76dff2;
+	position: relative;
+	padding: 0 10px;
+}
+
+#menu a{
+	padding: 20px 0;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+#menu a:hover{
+	background-color: white;
+}
